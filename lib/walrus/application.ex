@@ -10,7 +10,7 @@ defmodule Walrus.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
-      worker(Walrus.Router, []),
+      Plug.Adapters.Cowboy.child_spec(:http, Walrus.Router, [], [port: 4000])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
