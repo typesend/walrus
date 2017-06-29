@@ -4,6 +4,9 @@ use Mix.Config
 
 config :logger, :console, metadata: [:request_id]
 
+config :walrus,
+  storage: Path.expand("~/walrus-data")
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,

@@ -7,7 +7,9 @@ defmodule Walrus.Router do
   # Objects
 
   get "/buckets/:bucket/keys/:key" do
-    conn |> send_resp(200, "GET #{bucket} / #{key}")
+    data_path = Application.get_env(:walrus, :storage)
+    conn
+    |> send_file(200, Path.join(data_path, "buckets/#{bucket}/#{key}"))
   end
 
   put "/buckets/:bucket/keys/:key" do
