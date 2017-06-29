@@ -7,7 +7,7 @@ Your favorite bucket-based Web-aware blob storage server.
 
   * [Install](https://elixir-lang.org/install.html) Elixir 1.4.5
   * Install dependencies with `mix deps.get`
-  * Start the server with `mix run --no-halt`
+  * Start the server with `mix run --no-halt` or `iex -S mix run`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser or begin consuming the API.
 
