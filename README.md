@@ -5,7 +5,7 @@ Your favorite bucket-based Web-aware blob storage server.
 
 ## Developer Setup
 
-  * [Install](https://elixir-lang.org/install.html) Elixir 1.4.5
+  * [Install](https://elixir-lang.org/install.html) Elixir 1.8.2 (Erlang/OTP 22)
   * Install dependencies with `mix deps.get`
   * Start the server with `mix run --no-halt` or `iex -S mix run`
 
