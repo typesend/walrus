@@ -8,7 +8,7 @@ defmodule Walrus do
 
   ## Examples
 
-      iex> Walrus.hello
+      iex> Walrus.hello()
       :world
 
   """
